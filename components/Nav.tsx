@@ -17,7 +17,9 @@ export default function Nav() {
         <div>
           <h1 className="text-white uppercase tracking-widest text-3xl font-medium">
             Pedro
-            <span className="text-green-400 lowercase">/Dev..</span>
+            <span className="text-green-400 lowercase">/Dev.
+              <span className="animate-blink">.</span>
+            </span>
           </h1>
         </div>
 
