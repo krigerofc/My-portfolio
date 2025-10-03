@@ -42,11 +42,12 @@ export default function Header(){
                     <p className="mt-8 tracking-wider font-light max-w-[700px]">
                         Hi, I'm Pedro, a {age} years old web full stack developer with {WorkAge} years of experience and a current student of cybersecurity.<br/>
 
-                        <p className="mt-4">
+                    </p>
+                    <p className="mt-4 tracking-wider font-light max-w-[700px]">
                             I'm a student of Systems Analysis and Development, with a technical degree.<br/>
                             I'm currently seeking new opportunities to enhance my knowledge and gain valuable experience.
-                        </p>
                     </p>
+
                     <div className="mt-10 flex flex-row space-x-8">
                         <a href="/assets/doc/Dev.pdf" download>
                             <Button onClick={HandleDownload} variant="outline" className="text-3xl cursor-pointer p-6 bg-transparent hover:bg-transparent border-green-500 text-green-500 hover:text-green-800">

@@ -1,3 +1,4 @@
+import Contact from "@/components/contact";
 import Header from "@/components/header";
 import Nav from "@/components/Nav";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Nav/>
       <Header/>
+      <Contact/>
     </div>
   );
 }
