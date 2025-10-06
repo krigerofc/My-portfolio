@@ -119,13 +119,13 @@ export default function Header(){
               </Button>
             </a>
 
-            <div className="flex flex-row justify-start items-center space-x-4 mt-4 sm:mt-0">
+            <div className="flex flex-row items-center space-x-4">
               {social.map((item, index) => (
                 <Link
-                  className="flex justify-center items-center text-2xl md:text-3xl text-green-500 hover:text-green-800 transition-all"
                   key={index}
                   href={item.path}
                   target="_blank"
+                  className="flex items-center justify-center h-12 w-12 text-2xl md:text-3xl text-green-500 hover:text-green-800 transition-all"
                 >
                   {item.icon}
                 </Link>
