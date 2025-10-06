@@ -20,14 +20,16 @@ const ButtonContact = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="w-full bg-gray-950 py-20 px-6 md:px-16">
+    <section id="contact" className="w-full  py-20 px-6 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col text-white items-center">
+
         <h1 className="text-5xl md:text-6xl font-bold mb-12 text-green-500 tracking-tight">
           Contact
         </h1>
 
         <div className="flex flex-col md:flex-row justify-between items-start gap-16 w-full">
           <div className="space-y-10 w-full md:w-1/2">
+
             {contact.map((item, index) => {
               const Icon = item.icon;
               return (
@@ -45,9 +47,11 @@ export default function Contact() {
                 </div>
               );
             })}
+
           </div>
 
           <div className="flex flex-col w-full md:w-1/2 items-center md:items-end space-y-12">
+          
             {ButtonContact.map((item, index) => {
               const Icon = item.icon;
               return (
@@ -64,6 +68,7 @@ export default function Contact() {
               );
             })}
           </div>
+
         </div>
       </div>
     </section>
