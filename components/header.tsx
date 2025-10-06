@@ -98,7 +98,7 @@ export default function Header(){
 
           <p className="mt-8 tracking-wider font-light text-base sm:text-lg">
             Olá, sou Pedro, desenvolvedor web full stack de {age} anos
-            com {WorkAge} anos de experiência e atualmente estudante de cibersegurança.
+            com {WorkAge} anos de experiência e amante de cibersegurança.
           </p>
 
           <p className="mt-4 tracking-wider font-light text-base sm:text-lg">
