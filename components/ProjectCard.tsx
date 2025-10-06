@@ -12,7 +12,7 @@ interface CardProjectProps {
 
 export default function CardProject({ Title, C_work, Desc, Tec, Img } : CardProjectProps) {
   return (
-    <div className="max-w-md bg-gray-900 rounded-xl shadow-lg overflow-hidden p-4 flex flex-col gap-4">
+    <div className="max-w-md bg-gray-900 rounded-xl shadow-lg overflow-hidden p-4 flex flex-col gap-4" id="projects">
 
       <div className="w-full h-48 relative">
         <Image
