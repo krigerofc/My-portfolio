@@ -5,9 +5,9 @@ import clsx from "clsx";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/", label: "About me" },
-  { href: "/", label: "Projects" },
-  { href: "/", label: "Contact" },
+  { href: "#about", label: "About me" },
+  { href: "#project", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Nav() {

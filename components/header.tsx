@@ -26,7 +26,7 @@ const HandleDownload = () => {
 
 export default function Header(){
     return(
-        <div className="w-full h-[90vh] bg-gray">
+        <div className="w-full h-[90vh] bg-gray" id='about'>
             <div className="p-6 w-full h-full flex flex-row items-center justify-center space-x-20">
 
                 <div className="text-white">
@@ -35,7 +35,7 @@ export default function Header(){
                     </p>
 
                     <div className="text-8xl tracking-wider">
-                        <h1>Hello I'M</h1>
+                        <h1>Hello, I'M</h1>
                         <h1 className="text-green-500 border-b-2 border-green-400">Pedro Henrique</h1>
                     </div>
 
