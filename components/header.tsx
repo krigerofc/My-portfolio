@@ -25,7 +25,7 @@ export default function Header(){
     <div className="w-full h-screen bg-gray" id="about">
 
       {/* ---------------- Mobile View ---------------- */}
-      <div className="block md:hidden w-full h-full flex flex-col items-center justify-start text-center px-6 pt-10 gap-4 overflow-y-auto my-30">
+      <div className=" md:hidden w-full h-full flex flex-col items-center justify-start text-center px-6 pt-10 gap-4 overflow-y-auto my-30">
 
         <p className="tracking-wider text-2xl md:text-3xl text-white mb-14">
           Full stack developer
