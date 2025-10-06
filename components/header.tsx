@@ -7,28 +7,28 @@ import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import Link from "next/link";
 
 const date_new = new Date();
-const age:number = date_new.getFullYear() - 2005;
-const WorkAge:number = date_new.getFullYear() - 2022;
+const age: number = date_new.getFullYear() - 2005;
+const WorkAge: number = date_new.getFullYear() - 2022;
 
 const social = [
-    {icon: <FaGithub/>, path:"https://github.com/krigerofc"},
-    {icon: <FaLinkedinIn/>, path:"https://www.linkedin.com/in/pedrokriger/"},
-    {icon: <FaDiscord/>, path:"https://discord.gg/gzsv34RK8j"},
-]
+  { icon: <FaGithub />, path: "https://github.com/krigerofc" },
+  { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/pedrokriger/" },
+  { icon: <FaDiscord />, path: "https://discord.gg/gzsv34RK8j" },
+];
 
 const HandleDownload = () => {
-    window.open("/assets/doc/Pedro_dev.pdf", "_blank");
-}
+  window.open("/assets/doc/Pedro_dev.pdf", "_blank");
+};
 
-export default function Header(){
-   return (
+export default function Header() {
+  return (
     <div className="w-full h-screen bg-gray" id="about">
 
       {/* ---------------- Mobile View ---------------- */}
-      <div className=" md:hidden w-full h-full flex flex-col items-center justify-start text-center px-6 pt-10 gap-4 overflow-y-auto my-30">
+      <div className="md:hidden w-full h-full flex flex-col items-center justify-start text-center px-6 pt-10 gap-4 overflow-y-auto my-30">
 
         <p className="tracking-wider text-2xl md:text-3xl text-white mb-14">
-          Full stack developer
+          Desenvolvedor Full Stack
         </p>
 
         <Avatar className="animate-float size-60 sm:size-72 border-2 border-gray-700 shadow-[0_0_12px_6px_rgba(34,197,94,0.7)]">
@@ -37,7 +37,7 @@ export default function Header(){
         </Avatar>
 
         <div className="text-4xl sm:text-5xl tracking-wider leading-tight text-white mt-4">
-          <h1>Hello, I'M</h1>
+          <h1>Olá, eu sou</h1>
           <h1 className="text-green-500 border-b-2 border-green-400">
             Pedro Henrique
           </h1>
@@ -68,17 +68,13 @@ export default function Header(){
           </div>
         </div>
 
-        <div className="mt-6 text-white max-w-[600px] flex flex-col items-center px-2">
-          <p className="tracking-wider font-light text-base sm:text-lg">
-            Hi, I'm Pedro, a {age} years old web full stack developer with{" "}
-            {WorkAge} years of experience and a current student of cybersecurity.
+        <div className="mt-6 text-white max-w-[600px] flex flex-col items-center px-2 space-y-4">
+          <p className="tracking-wider font-light text-base sm:text-lg leading-relaxed">
+            Olá! Sou Pedro, desenvolvedor web full stack de {age} anos com {WorkAge} anos de experiência e entusiasta de cibersegurança.
           </p>
 
-          <p className="mt-4 tracking-wider font-light text-base sm:text-lg">
-            I'm a student of Systems Analysis and Development, with a technical
-            degree.<br />
-            I'm currently seeking new opportunities to enhance my knowledge and
-            gain valuable experience.
+          <p className="tracking-wider font-light text-base sm:text-lg leading-relaxed">
+            Atualmente cursando Análise e Desenvolvimento de Sistemas, possuo formação técnica na área. Estou em busca de novas oportunidades para aprimorar meus conhecimentos e adquirir experiências valiosas no mercado de tecnologia.
           </p>
         </div>
       </div>
@@ -87,7 +83,7 @@ export default function Header(){
       <div className="hidden md:flex w-full h-full flex-row items-center justify-center text-left px-6 md:px-20 gap-20 lg:my-10">
 
         <div className="text-white max-w-[1000px] flex flex-col items-start">
-          <p className="tracking-wider text-2xl md:text-3xl ">Full stack developer</p>
+          <p className="tracking-wider text-2xl md:text-3xl">Desenvolvedor Full Stack</p>
 
           <div className="text-5xl md:text-8xl tracking-wider leading-tight mt-4">
             <h1>Prazer, eu sou</h1>
@@ -96,16 +92,12 @@ export default function Header(){
             </h1>
           </div>
 
-          <p className="mt-8 tracking-wider font-light text-base sm:text-lg">
-            Olá, sou Pedro, desenvolvedor web full stack de {age} anos
-            com {WorkAge} anos de experiência e amante de cibersegurança.
+          <p className="mt-8 tracking-wider font-light text-base sm:text-lg leading-relaxed">
+            Olá! Sou Pedro, desenvolvedor web full stack de {age} anos com {WorkAge} anos de experiência e apaixonado por cibersegurança.
           </p>
 
-          <p className="mt-4 tracking-wider font-light text-base sm:text-lg">
-
-            Sou estudante de Análise e Desenvolvimento de Sistemas, com formação técnica.<br />
-            Estou em busca de novas oportunidades para aprimorar meus conhecimentos 
-            e adquirir experiências valiosas.
+          <p className="mt-4 tracking-wider font-light text-base sm:text-lg leading-relaxed">
+            Atualmente cursando Análise e Desenvolvimento de Sistemas, possuo formação técnica na área. Estou em busca de novas oportunidades para aprimorar meus conhecimentos e adquirir experiências valiosas no mercado de tecnologia.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-start sm:space-x-8 space-y-4 sm:space-y-0">
