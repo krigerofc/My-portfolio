@@ -7,7 +7,7 @@ export default function Project() {
             Imagem: '/assets/etique.png',
             Titulo: 'Etiqueta Fácil',
             Cargo: "Desenvolvedor Full Stack",
-            Descricao: 'O projeto etiqueta f[acil foi feito sobe uma necessidade real de etiquetar e cuidar de todo o gerencimento de estoque de um cozinha em restaurantesProjeto desenvolvido para atender a uma necessidade real de gerenciamento de estoque em cozinhas de restaurantes. A solução permite a criação e controle de etiquetas digitais, otimizando o processo de organização, rastreabilidade e reposição de insumos.',
+            Descricao: 'O projeto etiqueta fácil foi feito sobe uma necessidade real de etiquetar e cuidar de todo o gerencimento de estoque de um cozinha em restaurantesProjeto desenvolvido para atender a uma necessidade real de gerenciamento de estoque em cozinhas de restaurantes. A solução permite a criação e controle de etiquetas digitais, otimizando o processo de organização, rastreabilidade e reposição de insumos.',
             tecs: ["Next.JS", "React", "Prisma ORM", "Javascript", "TailwindCSS", "Vercel", "API REST", "CRUD", "IA", "SQL"]
         },
         {

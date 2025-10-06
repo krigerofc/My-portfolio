@@ -17,7 +17,7 @@ const social = [
 ]
 
 const HandleDownload = () => {
-    window.open("/assets/doc/Dev.pdf", "_blank");
+    window.open("/assets/doc/Pedro_dev.pdf", "_blank");
 }
 
 export default function Header(){
@@ -90,26 +90,26 @@ export default function Header(){
           <p className="tracking-wider text-2xl md:text-3xl ">Full stack developer</p>
 
           <div className="text-5xl md:text-8xl tracking-wider leading-tight mt-4">
-            <h1>Hello, I'M</h1>
+            <h1>Prazer, eu sou</h1>
             <h1 className="text-green-500 border-b-2 border-green-400">
               Pedro Henrique
             </h1>
           </div>
 
           <p className="mt-8 tracking-wider font-light text-base sm:text-lg">
-            Hi, I'm Pedro, a {age} years old web full stack developer with{" "}
-            {WorkAge} years of experience and a current student of cybersecurity.
+            Olá, sou Pedro, desenvolvedor web full stack de {age} anos
+            com {WorkAge} anos de experiência e atualmente estudante de cibersegurança.
           </p>
 
           <p className="mt-4 tracking-wider font-light text-base sm:text-lg">
-            I'm a student of Systems Analysis and Development, with a technical
-            degree.<br />
-            I'm currently seeking new opportunities to enhance my knowledge and
-            gain valuable experience.
+
+            Sou estudante de Análise e Desenvolvimento de Sistemas, com formação técnica.<br />
+            Estou em busca de novas oportunidades para aprimorar meus conhecimentos 
+            e adquirir experiências valiosas.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-start sm:space-x-8 space-y-4 sm:space-y-0">
-            <a href="/assets/doc/Dev.pdf" download>
+            <a href="/assets/doc/Pedro_dev.pdf" download>
               <Button
                 onClick={HandleDownload}
                 variant="outline"
