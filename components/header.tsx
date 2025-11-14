@@ -28,7 +28,7 @@ export default function Header() {
       <div className="md:hidden w-full h-full flex flex-col items-center justify-start text-center px-6 pt-10 gap-4 overflow-y-auto my-30">
 
         <p className="tracking-wider text-2xl md:text-3xl text-white mb-14">
-          Desenvolvedor Full Stack
+          Desenvolvedor Full-Stack
         </p>
 
         <Avatar className="animate-float size-60 sm:size-72 border-2 border-gray-700 shadow-[0_0_12px_6px_rgba(34,197,94,0.7)]">
@@ -70,7 +70,7 @@ export default function Header() {
 
         <div className="mt-6 text-white max-w-[600px] flex flex-col items-center px-2 space-y-4">
           <p className="tracking-wider font-light text-base sm:text-lg leading-relaxed">
-            Olá! Sou Pedro, desenvolvedor web full stack de {age} anos com {WorkAge} anos de experiência e entusiasta de cibersegurança.
+            Olá! Sou Pedro, desenvolvedor web full-stack de {age} anos com {WorkAge} anos de experiência e entusiasta de cibersegurança.
           </p>
 
           <p className="tracking-wider font-light text-base sm:text-lg leading-relaxed">
@@ -83,7 +83,7 @@ export default function Header() {
       <div className="hidden md:flex w-full h-full flex-row items-center justify-center text-left px-6 md:px-20 gap-20 lg:my-10">
 
         <div className="text-white max-w-[1000px] flex flex-col items-start">
-          <p className="tracking-wider text-2xl md:text-3xl">Desenvolvedor Full Stack</p>
+          <p className="tracking-wider text-2xl md:text-3xl">Desenvolvedor Full-Stack</p>
 
           <div className="text-5xl md:text-8xl tracking-wider leading-tight mt-4">
             <h1>Prazer, eu sou</h1>
@@ -93,7 +93,7 @@ export default function Header() {
           </div>
 
           <p className="mt-8 tracking-wider font-light text-base sm:text-lg leading-relaxed">
-            Olá! Sou Pedro, desenvolvedor web full stack de {age} anos com {WorkAge} anos de experiência e apaixonado por cibersegurança.
+            Olá! Sou Pedro, desenvolvedor web full-stack de {age} anos com {WorkAge} anos de experiência e apaixonado por cibersegurança.
           </p>
 
           <p className="mt-4 tracking-wider font-light text-base sm:text-lg leading-relaxed">
