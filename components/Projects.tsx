@@ -7,7 +7,7 @@ export default function Project() {
       Imagem: '/assets/Fabrics.png',
       Titulo: 'Fabrics Gestão',
       Cargo: "Desenvolvedor Full Stack",
-      Descricao: 'Fabrics é uma plataforma full stack de gestão para lojas têxteis, integrando catálogo de produtos, controle de lotes, vendas por unidade ou metro e assinaturas com cobrança recorrente. Desenvolvido em Next.js com Prisma e PostgreSQL, oferece dashboard moderno, autenticação segura e integração com Mercado Pago.',
+      Descricao: 'Fabrics é uma plataforma full stack de gestão para lojas pquenas, integrando catálogo de produtos, controle de lotes, vendas por unidade ou metro e assinaturas com cobrança recorrente. Desenvolvido em Next.js com Prisma e PostgreSQL, oferece dashboard moderno, autenticação segura e integração com Mercado Pago.',
       tecs: ["Next.JS", "React", "Supabase", "Mercado pago SDK", "Shadcn", "Prisma ORM", "Typescript", "TailwindCSS", "Vercel", "API REST", "CRUD", "SQL"]
     },
     {
