@@ -3,6 +3,13 @@ import CardProject from "./ProjectCard";
 
 export default function Project() {
   const projects = [
+      {
+      Imagem: '/assets/Fabrics.png',
+      Titulo: 'Fabrics Gestão',
+      Cargo: "Desenvolvedor Full Stack",
+      Descricao: 'Sistema completo desenvolvido para atender a uma necessidade real de gerenciamento de estoque em cozinhas de restaurantes. A solução permite a criação e controle de etiquetas digitais, otimizando o processo de organização, rastreabilidade e reposição de insumos. O projeto implementa funcionalidades de etiquetagem automática, controle de validade e alertas de reposição, garantindo eficiência operacional e redução significativa de desperdícios.',
+      tecs: ["Next.JS", "React", "Supabase", "Mercado pago SDK", "Shadcn", "Prisma ORM", "Typescript", "TailwindCSS", "Vercel", "API REST", "CRUD", "SQL"]
+    },
     {
       Imagem: '/assets/etique.png',
       Titulo: 'Etiqueta Fácil',
@@ -38,13 +45,13 @@ export default function Project() {
       Descricao: 'Bot personalizado para servidores Discord, desenvolvido com foco em automação de tarefas administrativas e interação dinâmica com os usuários. A proposta oferece comandos inovadores e adaptáveis, superando as limitações dos bots convencionais. O sistema implementa funcionalidades de moderação automatizada, economia virtual com sistema de moedas e ranks, mini-games interativos, sistema de níveis e recompensas, além de comandos de utilidade e entretenimento.',
       tecs: ["Python", "MongoDB", "API", "POO", "Redes", "Documentação"]
     },
-    {
-      Imagem: '/assets/botsite.png',
-      Titulo: 'Landing Page - Bot Kriger',
-      Cargo: "Desenvolvedor Front-end",
-      Descricao: 'Landing page desenvolvida para apresentar de forma clara e atrativa as funcionalidades do Bot Kriger, um bot multifuncional para servidores Discord. Com foco em moderação, diversão e economia virtual, a página comunica os principais recursos do bot através de um design moderno e responsivo. O site convida os usuários a integrá-lo às suas comunidades de maneira intuitiva, apresentando guias de instalação, lista completa de comandos e exemplos práticos de uso.',
-      tecs: ["HTML5", "CSS3", "Design Responsivo", "JavaScript"]
-    }
+   // {
+      //Imagem: '/assets/botsite.png',
+      //Titulo: 'Landing Page - Bot Kriger',
+      //Cargo: "Desenvolvedor Front-end",
+      //Descricao: 'Landing page desenvolvida para apresentar de forma clara e atrativa as funcionalidades do Bot Kriger, um bot multifuncional para servidores Discord. Com foco em moderação, diversão e economia virtual, a página comunica os principais recursos do bot através de um design moderno e responsivo. O site convida os usuários a integrá-lo às suas comunidades de maneira intuitiva, apresentando guias de instalação, lista completa de comandos e exemplos práticos de uso.',
+      //tecs: ["HTML5", "CSS3", "Design Responsivo", "JavaScript"]
+    //}
   ];
 
   return (
