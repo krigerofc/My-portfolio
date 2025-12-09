@@ -7,7 +7,7 @@ export default function Project() {
       Imagem: '/assets/Fabrics.png',
       Titulo: 'Fabrics Gestão',
       Cargo: "Desenvolvedor Full Stack",
-      Descricao: 'Sistema completo desenvolvido para atender a uma necessidade real de gerenciamento de estoque em cozinhas de restaurantes. A solução permite a criação e controle de etiquetas digitais, otimizando o processo de organização, rastreabilidade e reposição de insumos. O projeto implementa funcionalidades de etiquetagem automática, controle de validade e alertas de reposição, garantindo eficiência operacional e redução significativa de desperdícios.',
+      Descricao: 'Fabrics é uma plataforma full stack de gestão para lojas têxteis, integrando catálogo de produtos, controle de lotes, vendas por unidade ou metro e assinaturas com cobrança recorrente. Desenvolvido em Next.js com Prisma e PostgreSQL, oferece dashboard moderno, autenticação segura e integração com Mercado Pago.',
       tecs: ["Next.JS", "React", "Supabase", "Mercado pago SDK", "Shadcn", "Prisma ORM", "Typescript", "TailwindCSS", "Vercel", "API REST", "CRUD", "SQL"]
     },
     {
