@@ -45,6 +45,7 @@ export default function NeuralField({
 
   useEffect(() => {
     exploringRef.current = exploring;
+    if (exploring && canvasRef.current) canvasRef.current.style.cursor = "";
   }, [exploring]);
 
   useEffect(() => {
@@ -121,6 +122,21 @@ export default function NeuralField({
       }
     };
     canvas.addEventListener("click", onClick);
+
+    const onMouseMove = (e: MouseEvent) => {
+      if (exploringRef.current) return;
+      const rect = canvas.getBoundingClientRect();
+      const mx = e.clientX - rect.left;
+      const my = e.clientY - rect.top;
+      const { w, h } = sizeRef.current;
+      const overHub = sections.some((s) => {
+        const dx = mx - s.x * w;
+        const dy = my - s.y * h;
+        return Math.sqrt(dx * dx + dy * dy) < 34;
+      });
+      canvas.style.cursor = overHub ? "pointer" : "default";
+    };
+    canvas.addEventListener("mousemove", onMouseMove);
 
     let raf = 0;
     let t = 0;
@@ -289,6 +305,7 @@ export default function NeuralField({
       window.removeEventListener("keydown", onKeyDown);
       window.removeEventListener("keyup", onKeyUp);
       canvas.removeEventListener("click", onClick);
+      canvas.removeEventListener("mousemove", onMouseMove);
     };
   }, [activeSection, onSelectSection, onExitExploring]);
 
@@ -305,7 +322,7 @@ export default function NeuralField({
           <p className="text-xs text-slate-400">WASD / Arrows: Move · Space / Enter: Shoot</p>
           <button
             onClick={onExitExploring}
-            className="mt-2 rounded-full border border-white/15 px-3 py-1 text-xs text-slate-300 transition-colors hover:bg-white/10 hover:text-white"
+            className="mt-2 cursor-pointer rounded-full border border-white/15 px-3 py-1 text-xs text-slate-300 transition-colors hover:bg-white/10 hover:text-white"
           >
             Stop / Exit
           </button>

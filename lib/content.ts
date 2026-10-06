@@ -47,7 +47,6 @@ export const profile = {
       "    self.stack = [",
       '      "TypeScript",',
       '      "Python",',
-      '      "Java",',
       "    ]",
       '    self.degree = "Systems Analysis & Dev"',
       '    self.focus  = "Cybersecurity"',
@@ -142,7 +141,6 @@ export const skills = {
   items: [
     { name: "TypeScript", body: "Next.js, React and typed APIs end to end" },
     { name: "Python", body: "Automation, Discord bots and scripting" },
-    { name: "Java", body: "OOP, CRUD systems and application structure" },
     { name: "Next.js", body: "Full-stack apps, routing and server actions" },
     { name: "Databases", body: "PostgreSQL, MongoDB, Prisma and query design" },
     { name: "REST APIs", body: "Routes, auth, payments and integrations" },

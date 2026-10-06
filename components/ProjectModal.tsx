@@ -41,7 +41,7 @@ export default function ProjectModal({
           </div>
           <button
             onClick={onClose}
-            className="rounded-full p-1 text-slate-400 transition-colors hover:bg-white/10 hover:text-white"
+            className="cursor-pointer rounded-full p-1 text-slate-400 transition-colors hover:bg-white/10 hover:text-white"
             aria-label="Close project"
           >
             <X size={18} />

@@ -17,7 +17,7 @@ export default function TopNav({
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 md:px-8">
         <button
           onClick={onGoHome}
-          className="flex items-center gap-2 text-sm font-semibold tracking-widest text-white"
+          className="flex cursor-pointer items-center gap-2 text-sm font-semibold tracking-widest text-white"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
           PEDRO HENRIQUE
@@ -28,7 +28,7 @@ export default function TopNav({
             <button
               key={s.id}
               onClick={() => onSelectSection(s.id)}
-              className={`rounded-full px-4 py-1.5 text-sm transition-colors ${
+              className={`cursor-pointer rounded-full px-4 py-1.5 text-sm transition-colors ${
                 activeSection === s.id
                   ? "bg-indigo-600 text-white"
                   : "text-slate-400 hover:text-white"
@@ -83,7 +83,7 @@ export default function TopNav({
           <button
             key={s.id}
             onClick={() => onSelectSection(s.id)}
-            className={`shrink-0 rounded-full px-3 py-1 text-xs transition-colors ${
+            className={`shrink-0 cursor-pointer rounded-full px-3 py-1 text-xs transition-colors ${
               activeSection === s.id
                 ? "bg-white/10 text-white"
                 : "text-slate-400 hover:text-white"

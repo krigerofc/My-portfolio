@@ -63,7 +63,7 @@ export default function Projects() {
 
               <button
                 onClick={() => setOpen(p)}
-                className="mt-3 text-sm font-medium text-cyan-400 hover:underline"
+                className="mt-3 cursor-pointer text-sm font-medium text-cyan-400 hover:underline"
               >
                 View details →
               </button>

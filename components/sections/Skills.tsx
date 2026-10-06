@@ -1,5 +1,5 @@
 import { SiTypescript, SiPython, SiPostgresql, SiNextdotjs, SiReact } from "react-icons/si";
-import { FaJava, FaDocker } from "react-icons/fa";
+import { FaDocker } from "react-icons/fa";
 import { Zap, ShieldCheck, type LucideIcon } from "lucide-react";
 import type { IconType } from "react-icons";
 import { skills } from "@/lib/content";
@@ -7,7 +7,6 @@ import { skills } from "@/lib/content";
 const iconMap: Record<string, { Icon: IconType | LucideIcon; color: string }> = {
   TypeScript: { Icon: SiTypescript, color: "#3b82f6" },
   Python: { Icon: SiPython, color: "#eab308" },
-  Java: { Icon: FaJava, color: "#f97316" },
   "Next.js": { Icon: SiNextdotjs, color: "#e2e8f0" },
   Databases: { Icon: SiPostgresql, color: "#38bdf8" },
   "REST APIs": { Icon: Zap, color: "#2dd4bf" },
