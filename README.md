@@ -1,21 +1,21 @@
-## Getting Started
+# Pedro Henrique — Portfolio
 
+Personal portfolio: a canvas-based neural map background with clickable
+section clusters (About, Journey, Skills, Footprint, Projects, Contact) and a
+small WASD exploration-mode easter egg. Built with Next.js, TypeScript and
+Tailwind CSS.
+
+## Getting Started
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
+Open [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Stack
 
-Portfólio de apresentação sobre minha carreira e habilidades feito em 
-
-NEXT.JS > Typescript
-SHADCN
-REACT
+- Next.js 15 (App Router, Turbopack)
+- TypeScript
+- Tailwind CSS v4
+- Canvas 2D for the neural map background
