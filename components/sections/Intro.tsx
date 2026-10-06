@@ -5,7 +5,7 @@ import { profile } from "@/lib/content";
 
 export default function Intro() {
   return (
-    <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-4 pt-28 text-center md:pt-36">
+    <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-4 pt-28 text-center pointer-events-none md:pt-36">
       <Image
         src={profile.avatar}
         alt={profile.name}

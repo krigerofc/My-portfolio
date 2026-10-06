@@ -48,7 +48,7 @@ export default function Home() {
         onGoHome={() => setActiveSection(null)}
       />
 
-      <div className="relative z-10 px-4 pb-28 pt-24 md:pt-28">
+      <div className="relative z-10 px-4 pb-28 pt-24 pointer-events-none md:pt-28">
         {activeSection ? (
           <SectionPanel
             eyebrow={panels[activeSection].eyebrow}

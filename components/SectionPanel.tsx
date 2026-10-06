@@ -17,7 +17,7 @@ export default function SectionPanel({
   children: ReactNode;
 }) {
   return (
-    <div className="relative z-10 mx-auto flex max-h-[calc(100vh-7rem)] max-w-5xl flex-col overflow-y-auto rounded-3xl border border-white/10 bg-[#070a12]/80 p-6 shadow-2xl backdrop-blur-xl md:p-10">
+    <div className="relative z-10 mx-auto flex max-h-[calc(100vh-7rem)] max-w-5xl flex-col overflow-y-auto rounded-3xl border border-white/10 bg-[#070a12]/80 p-6 shadow-2xl backdrop-blur-xl pointer-events-auto md:p-10">
       <button
         onClick={onBack}
         className="mb-6 flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-slate-300 transition-colors hover:bg-white/10 hover:text-white"
