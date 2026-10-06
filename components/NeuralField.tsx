@@ -159,6 +159,28 @@ export default function NeuralField({
       }
       ctx.globalAlpha = 1;
 
+      const HUB_LINK_DIST = LINK_DIST * 1.6;
+      ctx.lineWidth = 1;
+      for (const s of sections) {
+        const hx = s.x * w;
+        const hy = s.y * h;
+        for (const n of nodes) {
+          if (!n.alive) continue;
+          const dx = hx - n.x;
+          const dy = hy - n.y;
+          const d = Math.sqrt(dx * dx + dy * dy);
+          if (d < HUB_LINK_DIST) {
+            ctx.strokeStyle = s.color;
+            ctx.globalAlpha = (1 - d / HUB_LINK_DIST) * 0.35;
+            ctx.beginPath();
+            ctx.moveTo(hx, hy);
+            ctx.lineTo(n.x, n.y);
+            ctx.stroke();
+          }
+        }
+      }
+      ctx.globalAlpha = 1;
+
       for (const n of nodes) {
         if (!n.alive) {
           if (performance.now() > n.respawnAt) {

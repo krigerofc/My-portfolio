@@ -11,9 +11,12 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export default function Contact() {
+  const cols = 2;
+  const rows = Math.ceil(contact.fields.length / cols);
+
   return (
     <div>
-      <div className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5 sm:flex-row sm:items-center">
+      <div className="flex items-center gap-4">
         <Image
           src={profile.avatar}
           alt={profile.name}
@@ -33,18 +36,21 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
-        {contact.fields.map((f) => {
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2">
+        {contact.fields.map((f, i) => {
           const Icon = iconMap[f.icon] ?? Mail;
+          const isLastRow = Math.floor(i / cols) === rows - 1;
           return (
             <a
               key={f.label}
               href={f.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-4 transition-colors hover:bg-white/[0.05]"
+              className={`flex items-center gap-3 py-4 transition-colors hover:opacity-80 ${
+                i % cols === 0 ? "md:pr-6" : "md:pl-6"
+              } ${isLastRow ? "" : "border-b border-white/10"}`}
             >
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-500/15 text-blue-300">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-blue-500/15 text-blue-300">
                 <Icon size={16} />
               </span>
               <span>
