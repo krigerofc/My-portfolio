@@ -20,8 +20,7 @@ type Bullet = {
   vy: number;
 };
 
-const LINK_DIST = 140;
-const NODE_COUNT = 46;
+const LINK_DIST = 150;
 
 export default function NeuralField({
   activeSection,
@@ -69,12 +68,13 @@ export default function NeuralField({
 
     if (nodesRef.current.length === 0) {
       const { w, h } = sizeRef.current;
-      nodesRef.current = Array.from({ length: NODE_COUNT }, () => ({
+      const nodeCount = Math.max(55, Math.min(110, Math.floor((w * h) / 15000)));
+      nodesRef.current = Array.from({ length: nodeCount }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
         vx: (Math.random() - 0.5) * 0.25,
         vy: (Math.random() - 0.5) * 0.25,
-        r: 1.6 + Math.random() * 1.6,
+        r: 1.6 + Math.random() * 1.8,
         alive: true,
         respawnAt: 0,
       }));
@@ -139,7 +139,7 @@ export default function NeuralField({
         if (n.y < 0 || n.y > h) n.vy *= -1;
       }
 
-      ctx.strokeStyle = "rgba(255,255,255,0.06)";
+      ctx.strokeStyle = "rgba(226,232,240,0.8)";
       ctx.lineWidth = 1;
       for (let i = 0; i < nodes.length; i++) {
         if (!nodes[i].alive) continue;
@@ -149,7 +149,7 @@ export default function NeuralField({
           const dy = nodes[i].y - nodes[j].y;
           const d = Math.sqrt(dx * dx + dy * dy);
           if (d < LINK_DIST) {
-            ctx.globalAlpha = 1 - d / LINK_DIST;
+            ctx.globalAlpha = (1 - d / LINK_DIST) * 0.22;
             ctx.beginPath();
             ctx.moveTo(nodes[i].x, nodes[i].y);
             ctx.lineTo(nodes[j].x, nodes[j].y);
@@ -168,7 +168,7 @@ export default function NeuralField({
           }
           continue;
         }
-        ctx.fillStyle = "rgba(148,163,184,0.55)";
+        ctx.fillStyle = "rgba(203,213,225,0.6)";
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
         ctx.fill();
